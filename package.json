@@ -1,0 +1,30 @@
+{
+  "name": "design-ur-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "run-p install:api install:web",
+    "install:api": "cd api && npm install",
+    "install:web": "cd front && npm install",
+    "start": "run-p start:api start:web",
+    "start:api": "npm run start --prefix api",
+    "start:web": "npm run start --prefix web",
+    "build": "run-p build:api build:web",
+    "build:api": "cd api && npm run build",
+    "build:web": "cd front && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duwalanise/design-ur-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duwalanise/design-ur-site/issues"
+  },
+  "homepage": "https://github.com/duwalanise/design-ur-site#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.3"
+  }
+}

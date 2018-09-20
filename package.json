@@ -9,7 +9,7 @@
     "install:web": "cd front && npm install",
     "start": "run-p start:api start:web",
     "start:api": "npm run start --prefix api",
-    "start:web": "npm run start --prefix web",
+    "start:web": "npm run start --prefix front",
     "build": "run-p build:api build:web",
     "build:api": "cd api && npm run build",
     "build:web": "cd front && npm run build"

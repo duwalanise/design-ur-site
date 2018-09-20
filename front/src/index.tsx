@@ -1,11 +1,9 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
-import registerServiceWorker from './registerServiceWorker';
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import "react-grid-layout/css/styles.css";
+import "react-resizable/css/styles.css";
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root') as HTMLElement
-);
-registerServiceWorker();
+import App from "./App";
+import "./index.css";
+
+ReactDOM.render(<App />, document.getElementById("root") as HTMLElement);
